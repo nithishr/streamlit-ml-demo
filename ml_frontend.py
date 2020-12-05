@@ -85,7 +85,7 @@ if uploaded_file:
     imagenetID, label, prob = predictions[0][0]
 
     st.image(bytes_data, caption=[f"{label} {prob*100:.2f}"])
-    st.subheader("Top Predictions")
+    st.subheader(f"Top Predictions from {network}")
     st.dataframe(
         pd.DataFrame(
             predictions[0], columns=["Network", "Classification", "Confidence"]
