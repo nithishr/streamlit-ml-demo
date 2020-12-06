@@ -13,6 +13,7 @@ Install the requirements
 ``pip install -r requirements.txt``
 
 Run the application
+
 ``streamlit run ml_frontend.py``
 
 The application will run on localhost:8501 by default.
